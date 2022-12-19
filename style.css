@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: texto;
+    src: url("/LeagueSpartan-VariableFont_wght.ttf");
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+main{
+    background-image: url('/images/bg-pattern-top-mobile.svg'),
+    url('/images/bg-pattern-bottom-mobile.svg');
+    background-position: top, bottom;
+    background-repeat: no-repeat, no-repeat;    
+    width: 358px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;                                      
+}
+.container{
+    width: 320px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container > h1{
+    width: 260px;
+    font-family: texto;
+    font-size: 35px;
+    text-align: center;
+    font-weight:bold;
+    color: hsl(300, 43%, 22%);
+}
+.container > p{
+    width: 330px;
+    font-family: texto;
+    font-size: 18px;
+    margin-top: 25px;
+    font-weight: bolder;
+    text-align: center;
+    color:  hsl(303, 10%, 53%);
+}
+
+.content{
+    width: 320px;
+    height: 80px;
+    border-radius: 7px;
+    margin-top: 25px;
+    background-color: hsl(300, 24%, 96%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text{
+    width: 320px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text> h2{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: texto;
+    color: hsl(300, 43%, 22%);
+}
+.content-stars{
+    width: 320px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+.content-stars > img{
+    display: block;   
+}
+.perfil{
+    width: 320px;
+}
+.perfil-1{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: hsl(300, 43%, 22%);
+}
+.perfil-colton{
+    width: 260px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.perfil-colton > img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.date-colton{
+    line-height: 20px;
+}
+.date-colton>h2{
+    font-family: texto;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+.date-colton>h3{
+    font-family: texto;
+    font-weight: normal;
+    color: hsl(333, 80%, 67%);
+}
+.perfil-1>p{
+    width: 260px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    font-family: texto;
+    line-height: 25px;    
+    color: white;
+}
+
+.perfil-2{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: hsl(300, 43%, 22%);
+}
+.perfil-irene{
+    width: 260px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.perfil-irene > img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.date-irene{
+    line-height: 20px;
+}
+.date-irene>h2{
+    font-family: texto;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+.date-irene>h3{
+    font-family: texto;
+    font-weight: normal;
+    color: hsl(333, 80%, 67%);
+}
+.perfil-2>p{
+    width: 260px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    font-family: texto;
+    line-height: 25px;    
+    color: white;
+}
+
+.perfil-3{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    background-color: hsl(300, 43%, 22%);
+}
+.perfil-anne{
+    width: 260px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.perfil-anne > img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.date-anne{
+    line-height: 20px;
+}
+.date-anne>h2{
+    font-family: texto;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+.date-anne>h3{
+    font-family: texto;
+    font-weight: normal;
+    color: hsl(333, 80%, 67%);
+}
+.perfil-3>p{
+    width: 260px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    font-family: texto;
+    line-height: 25px;    
+    color: white;
+}
+
+@media screen and (min-width:1440px){
+
+    body{
+        background-image: url('/images/bg-pattern-top-desktop.svg'),
+        url('/images/bg-pattern-bottom-desktop.svg');
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position: top left, right bottom -150px;
+    }
+    main{
+        background-image: url();
+        width: 90vw;
+    }
+    .desktop{
+        width: 90vw;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container{
+        margin-top: 0;
+        width: 50vw;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .container>h1{
+        text-align: left;
+        font-size: 55px;
+        width: 450px;
+    }
+    .container>p{
+        text-align: left;
+        width: 450px;
+    }
+
+    .stars1{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
+    .stars2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .stars3{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .content{
+        display: flex;
+        flex-direction: row;
+        width: 400px;
+        height: 60px;
+        margin-top: 20px;
+    }
+    .desktop-stars{
+        width: 50vw;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content-stars{
+        width: 180px;
+    }
+
+    .perfil{
+        height: 300px;
+        width: 90vw;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .perfil-1{
+        width: 400px;
+        align-self: flex-start;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .perfil-colton{
+        width: 320px;
+    }
+    .perfil-1>p{
+        width: 320px;
+    }
+    .perfil-2{
+        width: 400px;
+        margin-bottom: 0;
+        align-self: center;
+    }
+    .perfil-irene{
+        width: 320px;
+    }
+    .perfil-2>p{
+        width: 320px;
+    }
+    .perfil-3{
+        width: 400px;
+        margin-bottom: 0;
+        align-self: flex-end;
+    }
+    .perfil-anne{
+        width: 320px;
+    }
+    .perfil-3>p{
+        width: 320px;
+    }
+    
+}
